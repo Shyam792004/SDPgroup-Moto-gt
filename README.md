@@ -1,1 +1,0 @@
-# SDPgroup-Moto-gt

@@ -1,0 +1,203 @@
+/* Register.css */
+
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7fafc; /* Light gray background */
+  height: 60vh;
+}
+
+.register-content {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.register-image {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 70vh;
+  margin-top: 8vh;
+}
+
+.register-image-overlay {
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.register-image-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.register-image-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 80%;
+  text-align: center;
+}
+
+.register-form-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-form-content {
+  max-width: 400px;
+  width: 100%;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+.register-logo img {
+  display: block;
+  margin: 0 auto;
+  max-width: 60px;
+}
+
+.register-description {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.register-card-container {
+  margin-top: 2rem;
+  width: 46vh;
+  
+}
+
+.register-card-header {
+  margin-bottom: 1rem;
+}
+
+.register-card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.register-card-content {
+  padding: 1rem 0;
+}
+
+.register-input-container {
+  margin-bottom: 1rem;
+}
+
+.register-input {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: 1px solid #e2e8f0;
+  background-color: #f7fafc;
+  font-size: 0.875rem;
+  color: #333;
+}
+
+.register-button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #48bb78; /* Green */
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-button:hover {
+  background-color: #38a169; /* Darker green */
+}
+
+.register-signup {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.register-signup-link {
+  color: #3182ce; /* Blue */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-signup-link:hover {
+  text-decoration: underline;
+}
+:root {
+  --text-color: #e1e5eb;
+  --input-text-color: #0a2649;
+  --input-bg-color: white;
+  --input-border-color: #e2e8f0;
+  --focus-border-color: #4299e1;
+  --focus-shadow-color: rgba(66, 153, 225, 0.6);
+}
+
+[data-theme="dark"] {
+  --text-color: #f0f2f6;
+  --input-text-color: #232a31;
+  --input-bg-color: #1a202c;
+  --input-border-color: #334e7d;
+  --focus-border-color: #63b3ed;
+  --focus-shadow-color: rgba(99, 179, 237, 0.6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

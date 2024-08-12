@@ -1,0 +1,828 @@
+2024-08-12 10:51:08,419 INFO o.s.b.StartupInfoLogger [restartedMain] Starting QuizspringApplication using Java 17.0.10 with PID 10104 (C:\Users\Varun\Music\DT-SDP\sdp-varun\Spring-Security-Template-V4-main\Spring-Security-Template-V4-main\target\classes started by Varun in C:\Users\Varun\Music\DT-SDP\sdp-varun\Spring-Security-Template-V4-main\Spring-Security-Template-V4-main)
+2024-08-12 10:51:08,427 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-08-12 10:51:08,503 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-12 10:51:08,505 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-12 10:51:09,853 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-12 10:51:09,981 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 115 ms. Found 4 JPA repository interfaces.
+2024-08-12 10:51:11,061 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 7777 (http)
+2024-08-12 10:51:11,080 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2024-08-12 10:51:11,083 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-08-12 10:51:11,084 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-12 10:51:11,181 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-08-12 10:51:11,184 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2676 ms
+2024-08-12 10:51:11,433 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-12 10:51:11,552 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-12 10:51:11,626 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-08-12 10:51:12,083 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-12 10:51:12,141 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-08-12 10:51:12,578 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c130363
+2024-08-12 10:51:12,580 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-08-12 10:51:12,654 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-12 10:51:13,930 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-12 10:51:14,097 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-12 10:51:14,729 INFO o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [restartedMain] Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-08-12 10:51:14,970 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-12 10:51:15,507 DEBUG o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-08-12 10:51:15,991 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-08-12 10:51:16,025 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7777"]
+2024-08-12 10:51:16,061 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 7777 (http) with context path '/'
+2024-08-12 10:51:16,076 INFO o.s.b.StartupInfoLogger [restartedMain] Started QuizspringApplication in 8.268 seconds (process running for 9.108)
+2024-08-12 10:53:03,776 INFO o.a.j.l.DirectJDKLog [http-nio-7777-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-12 10:53:03,777 INFO o.s.w.s.FrameworkServlet [http-nio-7777-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-08-12 10:53:03,778 INFO o.s.w.s.FrameworkServlet [http-nio-7777-exec-1] Completed initialization in 1 ms
+2024-08-12 10:53:03,808 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing OPTIONS /api/auth/login
+2024-08-12 10:53:03,830 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /api/auth/login
+2024-08-12 10:53:03,838 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:53:03,840 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Secured POST /api/auth/login
+2024-08-12 10:53:04,287 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-2] Failed to find user 'jam@gmail.com'
+2024-08-12 10:53:04,291 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-2] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:53:04,300 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /error
+2024-08-12 10:53:04,301 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:53:04,302 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-2] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:53:16,423 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Securing OPTIONS /api/auth/login
+2024-08-12 10:53:16,427 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Securing POST /api/auth/login
+2024-08-12 10:53:16,430 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:53:16,431 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Secured POST /api/auth/login
+2024-08-12 10:53:16,509 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-4] Failed to find user 'jam@gmail.com'
+2024-08-12 10:53:16,511 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-4] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:53:16,512 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Securing POST /error
+2024-08-12 10:53:16,513 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:53:16,514 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-4] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:53:17,468 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing POST /api/auth/login
+2024-08-12 10:53:17,469 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:53:17,470 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Secured POST /api/auth/login
+2024-08-12 10:53:17,549 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-7] Failed to find user 'jam@gmail.com'
+2024-08-12 10:53:17,550 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-7] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:53:17,551 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing POST /error
+2024-08-12 10:53:17,553 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:53:17,554 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-7] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:53:18,009 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Securing POST /api/auth/login
+2024-08-12 10:53:18,011 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:53:18,012 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Secured POST /api/auth/login
+2024-08-12 10:53:18,089 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-6] Failed to find user 'jam@gmail.com'
+2024-08-12 10:53:18,091 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-6] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:53:18,092 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Securing POST /error
+2024-08-12 10:53:18,093 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:53:18,094 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-6] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:49,128 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Securing OPTIONS /api/auth/login
+2024-08-12 10:54:49,132 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Securing POST /api/auth/login
+2024-08-12 10:54:49,134 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-9] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:49,135 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Secured POST /api/auth/login
+2024-08-12 10:54:49,215 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-9] Failed to find user 'jam@gmail.com'
+2024-08-12 10:54:49,216 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-9] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:49,218 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Securing POST /error
+2024-08-12 10:54:49,218 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-9] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:49,219 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-9] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:52,303 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Securing POST /api/auth/login
+2024-08-12 10:54:52,305 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:52,306 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Secured POST /api/auth/login
+2024-08-12 10:54:52,382 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-10] Failed to find user 'jam@gmail.com'
+2024-08-12 10:54:52,383 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-10] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:52,386 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Securing POST /error
+2024-08-12 10:54:52,387 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:52,388 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-10] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:53,346 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing POST /api/auth/login
+2024-08-12 10:54:53,347 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:53,348 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Secured POST /api/auth/login
+2024-08-12 10:54:53,427 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-1] Failed to find user 'jam@gmail.com'
+2024-08-12 10:54:53,427 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-1] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:53,429 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing POST /error
+2024-08-12 10:54:53,429 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:53,430 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-1] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:53,480 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /api/auth/login
+2024-08-12 10:54:53,481 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:53,482 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Secured POST /api/auth/login
+2024-08-12 10:54:53,562 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-2] Failed to find user 'jam@gmail.com'
+2024-08-12 10:54:53,564 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-2] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:53,565 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /error
+2024-08-12 10:54:53,565 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:53,566 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-2] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:53,608 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Securing POST /api/auth/login
+2024-08-12 10:54:53,609 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:53,610 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Secured POST /api/auth/login
+2024-08-12 10:54:53,685 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-3] Failed to find user 'jam@gmail.com'
+2024-08-12 10:54:53,685 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-3] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:53,686 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Securing POST /error
+2024-08-12 10:54:53,687 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:53,688 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-3] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:53,705 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Securing POST /api/auth/login
+2024-08-12 10:54:53,706 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:53,707 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Secured POST /api/auth/login
+2024-08-12 10:54:53,773 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing POST /api/auth/login
+2024-08-12 10:54:53,774 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:53,775 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Secured POST /api/auth/login
+2024-08-12 10:54:53,782 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-4] Failed to find user 'jam@gmail.com'
+2024-08-12 10:54:53,784 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-4] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:53,785 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Securing POST /error
+2024-08-12 10:54:53,786 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:53,786 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-4] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:53,849 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-7] Failed to find user 'jam@gmail.com'
+2024-08-12 10:54:53,851 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-7] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:53,852 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing POST /error
+2024-08-12 10:54:53,854 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:53,854 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-7] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:53,902 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Securing POST /api/auth/login
+2024-08-12 10:54:53,903 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:53,904 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Secured POST /api/auth/login
+2024-08-12 10:54:53,979 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-6] Failed to find user 'jam@gmail.com'
+2024-08-12 10:54:53,980 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-6] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:53,982 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Securing POST /error
+2024-08-12 10:54:53,982 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:53,983 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-6] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:54,005 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Securing POST /api/auth/login
+2024-08-12 10:54:54,006 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:54,006 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Secured POST /api/auth/login
+2024-08-12 10:54:54,088 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-5] Failed to find user 'jam@gmail.com'
+2024-08-12 10:54:54,090 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-5] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:54,091 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Securing POST /error
+2024-08-12 10:54:54,092 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:54,093 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-5] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:54,113 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Securing POST /api/auth/login
+2024-08-12 10:54:54,114 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-8] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:54,115 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Secured POST /api/auth/login
+2024-08-12 10:54:54,190 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-8] Failed to find user 'jam@gmail.com'
+2024-08-12 10:54:54,191 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-8] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:54,192 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Securing POST /error
+2024-08-12 10:54:54,193 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-8] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:54,194 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-8] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:54,200 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Securing OPTIONS /api/auth/login
+2024-08-12 10:54:54,202 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Securing POST /api/auth/login
+2024-08-12 10:54:54,203 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:54,204 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Secured POST /api/auth/login
+2024-08-12 10:54:54,278 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-10] Failed to find user 'jam@gmail.com'
+2024-08-12 10:54:54,279 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-10] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:54,281 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Securing POST /error
+2024-08-12 10:54:54,282 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:54,282 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-10] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:54,330 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing POST /api/auth/login
+2024-08-12 10:54:54,331 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:54,332 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Secured POST /api/auth/login
+2024-08-12 10:54:54,408 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-1] Failed to find user 'jam@gmail.com'
+2024-08-12 10:54:54,409 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-1] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:54,410 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing POST /error
+2024-08-12 10:54:54,411 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:54,412 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-1] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:54,432 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /api/auth/login
+2024-08-12 10:54:54,434 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:54,436 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Secured POST /api/auth/login
+2024-08-12 10:54:54,508 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-2] Failed to find user 'jam@gmail.com'
+2024-08-12 10:54:54,509 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-2] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:54,511 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /error
+2024-08-12 10:54:54,512 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:54,513 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-2] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:54,575 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Securing POST /api/auth/login
+2024-08-12 10:54:54,576 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:54,578 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Secured POST /api/auth/login
+2024-08-12 10:54:54,650 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Securing POST /api/auth/login
+2024-08-12 10:54:54,651 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:54,651 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Secured POST /api/auth/login
+2024-08-12 10:54:54,653 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-3] Failed to find user 'jam@gmail.com'
+2024-08-12 10:54:54,655 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-3] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:54,657 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Securing POST /error
+2024-08-12 10:54:54,658 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:54,659 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-3] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:54,726 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-4] Failed to find user 'jam@gmail.com'
+2024-08-12 10:54:54,727 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-4] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:54,728 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Securing POST /error
+2024-08-12 10:54:54,729 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:54,730 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-4] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:54,830 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing POST /api/auth/login
+2024-08-12 10:54:54,832 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:54,833 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Secured POST /api/auth/login
+2024-08-12 10:54:54,906 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-7] Failed to find user 'jam@gmail.com'
+2024-08-12 10:54:54,908 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-7] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:54,908 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing POST /error
+2024-08-12 10:54:54,909 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:54,909 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-7] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:55,254 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Securing POST /api/auth/login
+2024-08-12 10:54:55,255 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:55,256 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Secured POST /api/auth/login
+2024-08-12 10:54:55,331 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-6] Failed to find user 'jam@gmail.com'
+2024-08-12 10:54:55,332 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-6] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:54:55,333 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Securing POST /error
+2024-08-12 10:54:55,334 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:54:55,335 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-6] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:55:26,508 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Securing OPTIONS /api/auth/login
+2024-08-12 10:55:26,511 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Securing POST /api/auth/login
+2024-08-12 10:55:26,512 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-8] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:55:26,513 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Secured POST /api/auth/login
+2024-08-12 10:55:26,594 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-8] Failed to find user 'jam@gmail.com'
+2024-08-12 10:55:26,595 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-8] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:55:26,596 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Securing POST /error
+2024-08-12 10:55:26,597 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-8] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:55:26,598 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-8] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:55:27,820 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Securing POST /api/auth/login
+2024-08-12 10:55:27,821 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-9] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:55:27,822 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Secured POST /api/auth/login
+2024-08-12 10:55:27,897 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-9] Failed to find user 'jam@gmail.com'
+2024-08-12 10:55:27,899 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-9] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:55:27,901 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Securing POST /error
+2024-08-12 10:55:27,902 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-9] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:55:27,903 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-9] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:55:27,989 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Securing POST /api/auth/login
+2024-08-12 10:55:27,990 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:55:27,991 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Secured POST /api/auth/login
+2024-08-12 10:55:28,083 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-10] Failed to find user 'jam@gmail.com'
+2024-08-12 10:55:28,084 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-10] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:55:28,085 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Securing POST /error
+2024-08-12 10:55:28,086 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:55:28,086 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-10] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:55:28,138 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing POST /api/auth/login
+2024-08-12 10:55:28,138 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:55:28,140 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Secured POST /api/auth/login
+2024-08-12 10:55:28,217 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-1] Failed to find user 'jam@gmail.com'
+2024-08-12 10:55:28,218 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-1] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:55:28,219 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing POST /error
+2024-08-12 10:55:28,221 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:55:28,221 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-1] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:55:28,286 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /api/auth/login
+2024-08-12 10:55:28,287 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:55:28,287 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Secured POST /api/auth/login
+2024-08-12 10:55:28,363 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-2] Failed to find user 'jam@gmail.com'
+2024-08-12 10:55:28,364 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-2] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:55:28,366 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /error
+2024-08-12 10:55:28,367 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:55:28,367 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-2] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:55:28,415 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Securing POST /api/auth/login
+2024-08-12 10:55:28,416 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:55:28,418 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Secured POST /api/auth/login
+2024-08-12 10:55:28,493 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-3] Failed to find user 'jam@gmail.com'
+2024-08-12 10:55:28,494 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-3] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:55:28,495 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Securing POST /error
+2024-08-12 10:55:28,496 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:55:28,497 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-3] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:55:28,532 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Securing POST /api/auth/login
+2024-08-12 10:55:28,533 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:55:28,534 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Secured POST /api/auth/login
+2024-08-12 10:55:28,610 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-4] Failed to find user 'jam@gmail.com'
+2024-08-12 10:55:28,612 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-4] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:55:28,613 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Securing POST /error
+2024-08-12 10:55:28,613 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:55:28,614 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-4] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:55:42,791 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing OPTIONS /api/auth/login
+2024-08-12 10:55:42,794 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Securing POST /api/auth/login
+2024-08-12 10:55:42,795 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:55:42,796 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Secured POST /api/auth/login
+2024-08-12 10:55:42,877 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-6] Failed to find user 'mal@gmail.com'
+2024-08-12 10:55:42,878 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-6] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:55:42,879 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Securing POST /error
+2024-08-12 10:55:42,880 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:55:42,880 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-6] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:55:46,742 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Securing POST /api/auth/login
+2024-08-12 10:55:46,743 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:55:46,744 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Secured POST /api/auth/login
+2024-08-12 10:55:46,827 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-5] Failed to find user 'mal@gmail.com'
+2024-08-12 10:55:46,828 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-5] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:55:46,829 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Securing POST /error
+2024-08-12 10:55:46,830 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:55:46,831 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-5] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:55:48,655 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Securing OPTIONS /api/auth/login
+2024-08-12 10:55:48,658 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Securing POST /api/auth/login
+2024-08-12 10:55:48,658 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-9] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:55:48,659 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Secured POST /api/auth/login
+2024-08-12 10:55:48,733 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-9] Failed to find user 'mal@gmail.com'
+2024-08-12 10:55:48,735 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-9] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:55:48,736 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Securing POST /error
+2024-08-12 10:55:48,737 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-9] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:55:48,737 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-9] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:55:48,811 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Securing POST /api/auth/login
+2024-08-12 10:55:48,812 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:55:48,813 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Secured POST /api/auth/login
+2024-08-12 10:55:48,886 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-10] Failed to find user 'mal@gmail.com'
+2024-08-12 10:55:48,888 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-10] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:55:48,890 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Securing POST /error
+2024-08-12 10:55:48,890 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:55:48,891 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-10] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:55:48,974 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing POST /api/auth/login
+2024-08-12 10:55:48,975 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:55:48,975 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Secured POST /api/auth/login
+2024-08-12 10:55:49,053 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-1] Failed to find user 'mal@gmail.com'
+2024-08-12 10:55:49,054 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-1] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:55:49,056 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing POST /error
+2024-08-12 10:55:49,057 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:55:49,057 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-1] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:55:52,577 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /api/auth/login
+2024-08-12 10:55:52,580 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:55:52,580 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Secured POST /api/auth/login
+2024-08-12 10:55:52,657 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-2] Failed to find user 'mal@gmail.com'
+2024-08-12 10:55:52,658 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-2] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:55:52,659 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /error
+2024-08-12 10:55:52,660 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:55:52,661 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-2] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:57:14,382 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing OPTIONS /api/auth/register
+2024-08-12 10:57:14,385 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Securing POST /api/auth/register
+2024-08-12 10:57:14,386 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:57:14,387 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Secured POST /api/auth/register
+2024-08-12 10:57:32,890 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Securing OPTIONS /api/auth/login
+2024-08-12 10:57:32,893 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Securing POST /api/auth/login
+2024-08-12 10:57:32,894 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-8] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:57:32,895 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Secured POST /api/auth/login
+2024-08-12 10:57:32,985 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-8] Failed to authenticate since password does not match stored value
+2024-08-12 10:57:32,987 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-8] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:57:32,988 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Securing POST /error
+2024-08-12 10:57:32,989 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-8] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:57:32,989 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-8] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:58:07,773 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Securing OPTIONS /api/auth/register
+2024-08-12 10:58:07,777 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Securing POST /api/auth/register
+2024-08-12 10:58:07,777 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:58:07,778 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Secured POST /api/auth/register
+2024-08-12 10:58:25,916 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing OPTIONS /api/auth/login
+2024-08-12 10:58:25,920 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /api/auth/login
+2024-08-12 10:58:25,921 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:58:25,922 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Secured POST /api/auth/login
+2024-08-12 10:58:26,008 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-2] Failed to authenticate since password does not match stored value
+2024-08-12 10:58:26,009 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-2] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:58:26,010 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /error
+2024-08-12 10:58:26,011 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:58:26,011 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-2] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:59:16,144 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Securing OPTIONS /api/auth/login
+2024-08-12 10:59:16,148 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Securing POST /api/auth/login
+2024-08-12 10:59:16,149 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:59:16,151 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Secured POST /api/auth/login
+2024-08-12 10:59:16,233 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-4] Failed to authenticate since password does not match stored value
+2024-08-12 10:59:16,234 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-4] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:59:16,235 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Securing POST /error
+2024-08-12 10:59:16,236 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:59:16,236 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-4] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:59:17,088 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing POST /api/auth/login
+2024-08-12 10:59:17,089 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:59:17,090 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Secured POST /api/auth/login
+2024-08-12 10:59:17,170 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-7] Failed to authenticate since password does not match stored value
+2024-08-12 10:59:17,171 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-7] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:59:17,173 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing POST /error
+2024-08-12 10:59:17,174 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:59:17,175 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-7] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:59:17,923 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Securing POST /api/auth/login
+2024-08-12 10:59:17,924 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:59:17,925 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Secured POST /api/auth/login
+2024-08-12 10:59:18,002 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-6] Failed to authenticate since password does not match stored value
+2024-08-12 10:59:18,004 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-6] Pre-authenticated entry point called. Rejecting access
+2024-08-12 10:59:18,006 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Securing POST /error
+2024-08-12 10:59:18,006 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 10:59:18,007 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-6] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:01:46,540 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Securing OPTIONS /api/auth/login
+2024-08-12 11:01:46,542 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Securing POST /api/auth/login
+2024-08-12 11:01:46,543 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-9] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:01:46,544 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Secured POST /api/auth/login
+2024-08-12 11:01:46,632 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-9] Failed to authenticate since password does not match stored value
+2024-08-12 11:01:46,633 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-9] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:01:46,634 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Securing POST /error
+2024-08-12 11:01:46,635 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-9] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:01:46,636 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-9] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:04:00,276 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing OPTIONS /api/auth/login
+2024-08-12 11:04:00,280 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /api/auth/login
+2024-08-12 11:04:00,281 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:04:00,282 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Secured POST /api/auth/login
+2024-08-12 11:04:00,361 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-2] Failed to authenticate since password does not match stored value
+2024-08-12 11:04:00,362 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-2] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:04:00,363 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /error
+2024-08-12 11:04:00,364 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:04:00,364 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-2] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:05:14,648 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Securing OPTIONS /api/auth/login
+2024-08-12 11:05:14,650 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing POST /api/auth/login
+2024-08-12 11:05:14,652 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:05:14,652 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Secured POST /api/auth/login
+2024-08-12 11:05:14,738 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-7] Failed to authenticate since password does not match stored value
+2024-08-12 11:05:14,739 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-7] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:05:14,740 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing POST /error
+2024-08-12 11:05:14,741 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:05:14,742 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-7] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:05:15,213 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Securing POST /api/auth/login
+2024-08-12 11:05:15,214 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:05:15,215 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Secured POST /api/auth/login
+2024-08-12 11:05:15,294 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-6] Failed to authenticate since password does not match stored value
+2024-08-12 11:05:15,295 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-6] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:05:15,296 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Securing POST /error
+2024-08-12 11:05:15,297 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:05:15,298 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-6] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:05:15,370 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Securing POST /api/auth/login
+2024-08-12 11:05:15,371 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:05:15,372 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Secured POST /api/auth/login
+2024-08-12 11:05:15,448 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-5] Failed to authenticate since password does not match stored value
+2024-08-12 11:05:15,449 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-5] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:05:15,450 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Securing POST /error
+2024-08-12 11:05:15,450 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:05:15,452 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-5] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:05:15,694 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Securing POST /api/auth/login
+2024-08-12 11:05:15,696 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-8] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:05:15,696 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Secured POST /api/auth/login
+2024-08-12 11:05:15,772 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-8] Failed to authenticate since password does not match stored value
+2024-08-12 11:05:15,773 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-8] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:05:15,775 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Securing POST /error
+2024-08-12 11:05:15,775 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-8] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:05:15,776 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-8] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:05:57,051 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Securing OPTIONS /api/auth/register
+2024-08-12 11:05:57,054 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Securing POST /api/auth/register
+2024-08-12 11:05:57,055 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:05:57,056 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Secured POST /api/auth/register
+2024-08-12 11:06:08,395 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing OPTIONS /api/auth/login
+2024-08-12 11:06:08,399 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /api/auth/login
+2024-08-12 11:06:08,400 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:06:08,401 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Secured POST /api/auth/login
+2024-08-12 11:06:08,478 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-2] Authenticated user
+2024-08-12 11:06:53,058 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Securing OPTIONS /api/auth/login
+2024-08-12 11:06:53,062 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Securing POST /api/auth/login
+2024-08-12 11:06:53,063 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:06:53,064 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Secured POST /api/auth/login
+2024-08-12 11:06:53,140 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-4] Authenticated user
+2024-08-12 11:15:55,260 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Securing OPTIONS /api/auth/login
+2024-08-12 11:15:55,263 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Securing POST /api/auth/login
+2024-08-12 11:15:55,264 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:15:55,265 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Secured POST /api/auth/login
+2024-08-12 11:15:55,342 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-5] Failed to authenticate since password does not match stored value
+2024-08-12 11:15:55,343 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-5] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:15:55,344 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Securing POST /error
+2024-08-12 11:15:55,345 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:15:55,345 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-5] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:46:53,460 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Securing OPTIONS /api/auth/login
+2024-08-12 11:46:53,463 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Securing POST /api/auth/login
+2024-08-12 11:46:53,464 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:46:53,465 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Secured POST /api/auth/login
+2024-08-12 11:46:53,544 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-10] Failed to find user ''
+2024-08-12 11:46:53,544 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-10] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:46:53,545 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Securing POST /error
+2024-08-12 11:46:53,552 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:46:53,552 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-10] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:47:02,726 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing OPTIONS /api/auth/login
+2024-08-12 11:47:02,729 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /api/auth/login
+2024-08-12 11:47:02,730 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:47:02,731 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Secured POST /api/auth/login
+2024-08-12 11:47:02,810 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-2] Failed to authenticate since password does not match stored value
+2024-08-12 11:47:02,811 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-2] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:47:02,812 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /error
+2024-08-12 11:47:02,813 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:47:02,814 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-2] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:47:03,679 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m50s657ms963µs300ns).
+2024-08-12 11:47:04,814 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Securing POST /api/auth/login
+2024-08-12 11:47:04,815 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:47:04,816 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Secured POST /api/auth/login
+2024-08-12 11:47:04,892 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-3] Failed to authenticate since password does not match stored value
+2024-08-12 11:47:04,893 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-3] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:47:04,895 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Securing POST /error
+2024-08-12 11:47:04,896 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:47:04,897 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-3] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:47:05,228 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Securing POST /api/auth/login
+2024-08-12 11:47:05,229 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:47:05,230 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Secured POST /api/auth/login
+2024-08-12 11:47:05,303 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-4] Failed to authenticate since password does not match stored value
+2024-08-12 11:47:05,305 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-4] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:47:05,306 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Securing POST /error
+2024-08-12 11:47:05,307 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:47:05,308 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-4] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:47:05,733 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing POST /api/auth/login
+2024-08-12 11:47:05,734 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:47:05,735 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Secured POST /api/auth/login
+2024-08-12 11:47:05,809 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-7] Failed to authenticate since password does not match stored value
+2024-08-12 11:47:05,810 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-7] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:47:05,811 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing POST /error
+2024-08-12 11:47:05,811 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:47:05,812 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-7] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:47:05,936 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Securing POST /api/auth/login
+2024-08-12 11:47:05,937 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:47:05,938 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Secured POST /api/auth/login
+2024-08-12 11:47:06,015 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-6] Failed to authenticate since password does not match stored value
+2024-08-12 11:47:06,016 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-6] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:47:06,017 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Securing POST /error
+2024-08-12 11:47:06,018 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:47:06,019 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-6] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:47:06,137 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Securing POST /api/auth/login
+2024-08-12 11:47:06,138 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:47:06,139 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Secured POST /api/auth/login
+2024-08-12 11:47:06,213 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-5] Failed to authenticate since password does not match stored value
+2024-08-12 11:47:06,214 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-5] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:47:06,216 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Securing POST /error
+2024-08-12 11:47:06,217 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:47:06,217 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-5] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:47:06,342 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Securing POST /api/auth/login
+2024-08-12 11:47:06,343 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-8] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:47:06,344 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Secured POST /api/auth/login
+2024-08-12 11:47:06,419 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-8] Failed to authenticate since password does not match stored value
+2024-08-12 11:47:06,421 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-8] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:47:06,422 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Securing POST /error
+2024-08-12 11:47:06,423 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-8] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:47:06,424 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-8] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:47:06,593 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Securing POST /api/auth/login
+2024-08-12 11:47:06,594 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-9] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:47:06,595 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Secured POST /api/auth/login
+2024-08-12 11:47:06,670 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-9] Failed to authenticate since password does not match stored value
+2024-08-12 11:47:06,671 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-9] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:47:06,672 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Securing POST /error
+2024-08-12 11:47:06,673 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-9] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:47:06,674 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-9] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:47:06,932 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Securing POST /api/auth/login
+2024-08-12 11:47:06,933 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:47:06,934 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Secured POST /api/auth/login
+2024-08-12 11:47:07,009 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-10] Failed to authenticate since password does not match stored value
+2024-08-12 11:47:07,010 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-10] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:47:07,011 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Securing POST /error
+2024-08-12 11:47:07,012 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:47:07,013 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-10] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:47:07,277 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing POST /api/auth/login
+2024-08-12 11:47:07,279 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:47:07,279 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Secured POST /api/auth/login
+2024-08-12 11:47:07,354 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-1] Failed to authenticate since password does not match stored value
+2024-08-12 11:47:07,355 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-1] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:47:07,356 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing POST /error
+2024-08-12 11:47:07,357 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:47:07,358 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-1] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:47:07,636 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /api/auth/login
+2024-08-12 11:47:07,637 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:47:07,639 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Secured POST /api/auth/login
+2024-08-12 11:47:07,712 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-2] Failed to authenticate since password does not match stored value
+2024-08-12 11:47:07,713 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-2] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:47:07,714 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /error
+2024-08-12 11:47:07,715 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:47:07,716 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-2] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:47:07,996 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Securing OPTIONS /api/auth/login
+2024-08-12 11:47:07,999 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Securing POST /api/auth/login
+2024-08-12 11:47:08,000 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:47:08,001 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Secured POST /api/auth/login
+2024-08-12 11:47:08,081 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-4] Failed to authenticate since password does not match stored value
+2024-08-12 11:47:08,082 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-4] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:47:08,083 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Securing POST /error
+2024-08-12 11:47:08,084 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:47:08,085 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-4] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:47:08,218 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing POST /api/auth/login
+2024-08-12 11:47:08,219 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:47:08,220 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Secured POST /api/auth/login
+2024-08-12 11:47:08,295 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-7] Failed to authenticate since password does not match stored value
+2024-08-12 11:47:08,296 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-7] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:47:08,297 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing POST /error
+2024-08-12 11:47:08,297 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:47:08,298 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-7] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:55:45,138 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Securing OPTIONS /api/auth/login
+2024-08-12 11:55:45,142 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Securing POST /api/auth/login
+2024-08-12 11:55:45,143 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-8] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:55:45,143 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Secured POST /api/auth/login
+2024-08-12 11:55:45,224 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-8] Failed to authenticate since password does not match stored value
+2024-08-12 11:55:45,225 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-8] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:55:45,225 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Securing POST /error
+2024-08-12 11:55:45,226 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-8] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:55:45,227 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-8] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:55:46,990 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Securing POST /api/auth/login
+2024-08-12 11:55:46,991 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-9] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:55:46,992 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Secured POST /api/auth/login
+2024-08-12 11:55:47,067 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-9] Failed to authenticate since password does not match stored value
+2024-08-12 11:55:47,068 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-9] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:55:47,068 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Securing POST /error
+2024-08-12 11:55:47,069 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-9] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:55:47,069 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-9] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:55:47,287 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Securing POST /api/auth/login
+2024-08-12 11:55:47,288 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:55:47,289 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Secured POST /api/auth/login
+2024-08-12 11:55:47,362 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-10] Failed to authenticate since password does not match stored value
+2024-08-12 11:55:47,364 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-10] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:55:47,365 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Securing POST /error
+2024-08-12 11:55:47,366 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:55:47,366 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-10] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:55:52,352 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing OPTIONS /api/auth/login
+2024-08-12 11:55:52,356 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /api/auth/login
+2024-08-12 11:55:52,357 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:55:52,357 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Secured POST /api/auth/login
+2024-08-12 11:55:52,430 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-2] Failed to authenticate since password does not match stored value
+2024-08-12 11:55:52,431 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-2] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:55:52,432 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /error
+2024-08-12 11:55:52,433 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:55:52,433 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-2] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:55:53,072 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Securing POST /api/auth/login
+2024-08-12 11:55:53,073 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:55:53,074 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Secured POST /api/auth/login
+2024-08-12 11:55:53,148 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-3] Failed to authenticate since password does not match stored value
+2024-08-12 11:55:53,149 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-3] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:55:53,150 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Securing POST /error
+2024-08-12 11:55:53,150 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:55:53,150 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-3] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:55:53,284 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Securing POST /api/auth/login
+2024-08-12 11:55:53,284 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:55:53,285 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Secured POST /api/auth/login
+2024-08-12 11:55:53,362 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-4] Failed to authenticate since password does not match stored value
+2024-08-12 11:55:53,362 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-4] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:55:53,364 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Securing POST /error
+2024-08-12 11:55:53,365 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:55:53,365 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-4] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:55:53,459 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing POST /api/auth/login
+2024-08-12 11:55:53,461 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:55:53,461 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Secured POST /api/auth/login
+2024-08-12 11:55:53,535 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-7] Failed to authenticate since password does not match stored value
+2024-08-12 11:55:53,537 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-7] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:55:53,537 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing POST /error
+2024-08-12 11:55:53,538 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:55:53,538 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-7] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:56:13,666 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Securing OPTIONS /api/auth/login
+2024-08-12 11:56:13,668 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Securing POST /api/auth/login
+2024-08-12 11:56:13,669 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:56:13,670 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Secured POST /api/auth/login
+2024-08-12 11:56:13,746 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-5] Failed to authenticate since password does not match stored value
+2024-08-12 11:56:13,747 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-5] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:56:13,748 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Securing POST /error
+2024-08-12 11:56:13,749 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:56:13,750 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-5] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:56:24,842 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Securing OPTIONS /api/auth/login
+2024-08-12 11:56:24,845 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Securing POST /api/auth/login
+2024-08-12 11:56:24,847 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-9] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:56:24,847 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Secured POST /api/auth/login
+2024-08-12 11:56:24,928 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-9] Failed to authenticate since password does not match stored value
+2024-08-12 11:56:24,930 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-9] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:56:24,931 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Securing POST /error
+2024-08-12 11:56:24,931 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-9] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:56:24,932 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-9] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:56:32,208 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Securing OPTIONS /api/auth/login
+2024-08-12 11:56:32,211 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing POST /api/auth/login
+2024-08-12 11:56:32,212 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:56:32,214 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Secured POST /api/auth/login
+2024-08-12 11:56:32,290 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-1] Failed to authenticate since password does not match stored value
+2024-08-12 11:56:32,291 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-1] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:56:32,292 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing POST /error
+2024-08-12 11:56:32,293 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:56:32,294 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-1] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:56:43,496 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing OPTIONS /api/auth/login
+2024-08-12 11:56:43,498 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Securing POST /api/auth/login
+2024-08-12 11:56:43,500 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:56:43,500 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Secured POST /api/auth/login
+2024-08-12 11:56:43,577 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-3] Failed to authenticate since password does not match stored value
+2024-08-12 11:56:43,579 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-3] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:56:43,580 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Securing POST /error
+2024-08-12 11:56:43,580 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:56:43,581 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-3] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:59:53,020 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing OPTIONS /api/auth/login
+2024-08-12 11:59:53,023 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Securing POST /api/auth/login
+2024-08-12 11:59:53,024 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:59:53,024 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Secured POST /api/auth/login
+2024-08-12 11:59:53,098 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-6] Failed to authenticate since password does not match stored value
+2024-08-12 11:59:53,099 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-6] Pre-authenticated entry point called. Rejecting access
+2024-08-12 11:59:53,100 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Securing POST /error
+2024-08-12 11:59:53,101 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 11:59:53,101 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-6] Pre-authenticated entry point called. Rejecting access
+2024-08-12 12:03:56,588 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Securing OPTIONS /api/auth/login
+2024-08-12 12:03:56,591 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Securing POST /api/auth/login
+2024-08-12 12:03:56,592 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-9] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 12:03:56,593 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Secured POST /api/auth/login
+2024-08-12 12:03:56,669 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-9] Failed to authenticate since password does not match stored value
+2024-08-12 12:03:56,670 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-9] Pre-authenticated entry point called. Rejecting access
+2024-08-12 12:03:56,671 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Securing POST /error
+2024-08-12 12:03:56,672 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-9] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 12:03:56,673 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-9] Pre-authenticated entry point called. Rejecting access
+2024-08-12 12:09:05,467 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing OPTIONS /api/auth/login
+2024-08-12 12:09:05,470 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /api/auth/login
+2024-08-12 12:09:05,471 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 12:09:05,472 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Secured POST /api/auth/login
+2024-08-12 12:09:05,550 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-2] Failed to find user 'mal@gmail.com'
+2024-08-12 12:09:05,551 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-2] Pre-authenticated entry point called. Rejecting access
+2024-08-12 12:09:05,551 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /error
+2024-08-12 12:09:05,552 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 12:09:05,552 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-2] Pre-authenticated entry point called. Rejecting access
+2024-08-12 12:29:32,337 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Securing OPTIONS /api/auth/login
+2024-08-12 12:29:32,340 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing POST /api/auth/login
+2024-08-12 12:29:32,341 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 12:29:32,341 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Secured POST /api/auth/login
+2024-08-12 12:29:32,419 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-7] Failed to find user 'mal@gmail.com'
+2024-08-12 12:29:32,421 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-7] Pre-authenticated entry point called. Rejecting access
+2024-08-12 12:29:32,421 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing POST /error
+2024-08-12 12:29:32,421 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 12:29:32,422 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-7] Pre-authenticated entry point called. Rejecting access
+2024-08-12 12:29:33,684 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Securing POST /api/auth/login
+2024-08-12 12:29:33,686 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 12:29:33,687 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Secured POST /api/auth/login
+2024-08-12 12:29:33,762 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-6] Failed to find user 'mal@gmail.com'
+2024-08-12 12:29:33,763 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-6] Pre-authenticated entry point called. Rejecting access
+2024-08-12 12:29:33,764 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Securing POST /error
+2024-08-12 12:29:33,765 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 12:29:33,765 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-6] Pre-authenticated entry point called. Rejecting access
+2024-08-12 12:29:34,536 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Securing POST /api/auth/login
+2024-08-12 12:29:34,538 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 12:29:34,540 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Secured POST /api/auth/login
+2024-08-12 12:29:34,621 DEBUG o.s.s.a.d.AbstractUserDetailsAuthenticationProvider [http-nio-7777-exec-5] Failed to find user 'mal@gmail.com'
+2024-08-12 12:29:34,622 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-5] Pre-authenticated entry point called. Rejecting access
+2024-08-12 12:29:34,623 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Securing POST /error
+2024-08-12 12:29:34,623 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 12:29:34,624 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-5] Pre-authenticated entry point called. Rejecting access
+2024-08-12 13:35:00,378 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m55s33ms272µs700ns).
+2024-08-12 13:53:55,518 INFO o.s.b.StartupInfoLogger [restartedMain] Starting QuizspringApplication using Java 17.0.10 with PID 12124 (C:\Users\Varun\Music\DT-SDP\sdp-varun\Spring-Security-Template-V4-main\Spring-Security-Template-V4-main\target\classes started by Varun in C:\Users\Varun\Music\DT-SDP\sdp-varun\Spring-Security-Template-V4-main\Spring-Security-Template-V4-main)
+2024-08-12 13:53:55,523 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-08-12 13:53:55,585 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-12 13:53:55,586 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-12 13:53:56,747 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-12 13:53:56,883 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 126 ms. Found 4 JPA repository interfaces.
+2024-08-12 13:53:58,036 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 7777 (http)
+2024-08-12 13:53:58,052 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-7777"]
+2024-08-12 13:53:58,056 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-08-12 13:53:58,058 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-12 13:53:58,149 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-08-12 13:53:58,154 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2562 ms
+2024-08-12 13:53:58,422 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-12 13:53:58,506 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-08-12 13:53:58,549 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2024-08-12 13:53:58,954 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-08-12 13:53:58,998 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2024-08-12 13:53:59,403 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f732ead
+2024-08-12 13:53:59,406 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2024-08-12 13:53:59,499 WARN o.h.e.j.d.i.DialectFactoryImpl [restartedMain] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-08-12 13:54:00,652 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-08-12 13:54:00,749 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-08-12 13:54:01,237 INFO o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [restartedMain] Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-08-12 13:54:01,412 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-12 13:54:01,830 DEBUG o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2024-08-12 13:54:02,399 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-08-12 13:54:02,428 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-7777"]
+2024-08-12 13:54:02,460 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 7777 (http) with context path '/'
+2024-08-12 13:54:02,475 INFO o.s.b.StartupInfoLogger [restartedMain] Started QuizspringApplication in 7.711 seconds (process running for 8.505)
+2024-08-12 13:59:31,291 INFO o.a.j.l.DirectJDKLog [http-nio-7777-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-12 13:59:31,293 INFO o.s.w.s.FrameworkServlet [http-nio-7777-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-08-12 13:59:31,297 INFO o.s.w.s.FrameworkServlet [http-nio-7777-exec-1] Completed initialization in 3 ms
+2024-08-12 13:59:31,384 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing OPTIONS /api/auth/login
+2024-08-12 13:59:31,439 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /api/auth/login
+2024-08-12 13:59:31,454 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 13:59:31,460 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Secured POST /api/auth/login
+2024-08-12 13:59:32,209 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Securing POST /api/auth/login
+2024-08-12 13:59:32,213 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 13:59:32,215 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Secured POST /api/auth/login
+2024-08-12 13:59:32,742 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Securing POST /api/auth/login
+2024-08-12 13:59:32,742 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-2] Failed to authenticate since password does not match stored value
+2024-08-12 13:59:32,746 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 13:59:32,749 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Secured POST /api/auth/login
+2024-08-12 13:59:32,761 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-2] Pre-authenticated entry point called. Rejecting access
+2024-08-12 13:59:32,770 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-3] Failed to authenticate since password does not match stored value
+2024-08-12 13:59:32,776 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-3] Pre-authenticated entry point called. Rejecting access
+2024-08-12 13:59:32,781 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Securing POST /error
+2024-08-12 13:59:32,781 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /error
+2024-08-12 13:59:32,783 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 13:59:32,783 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 13:59:32,786 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-2] Pre-authenticated entry point called. Rejecting access
+2024-08-12 13:59:32,786 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-3] Pre-authenticated entry point called. Rejecting access
+2024-08-12 13:59:32,912 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Securing POST /api/auth/login
+2024-08-12 13:59:32,916 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 13:59:32,918 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Secured POST /api/auth/login
+2024-08-12 13:59:33,019 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-4] Failed to authenticate since password does not match stored value
+2024-08-12 13:59:33,023 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-4] Pre-authenticated entry point called. Rejecting access
+2024-08-12 13:59:33,027 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-4] Securing POST /error
+2024-08-12 13:59:33,029 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-4] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 13:59:33,031 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-4] Pre-authenticated entry point called. Rejecting access
+2024-08-12 13:59:33,079 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Securing POST /api/auth/login
+2024-08-12 13:59:33,082 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 13:59:33,084 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Secured POST /api/auth/login
+2024-08-12 13:59:33,232 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-5] Failed to authenticate since password does not match stored value
+2024-08-12 13:59:33,235 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-5] Pre-authenticated entry point called. Rejecting access
+2024-08-12 13:59:33,240 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-5] Securing POST /error
+2024-08-12 13:59:33,240 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing POST /api/auth/login
+2024-08-12 13:59:33,242 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-5] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 13:59:33,244 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-5] Pre-authenticated entry point called. Rejecting access
+2024-08-12 13:59:33,244 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 13:59:33,245 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Secured POST /api/auth/login
+2024-08-12 13:59:33,403 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-6] Failed to authenticate since password does not match stored value
+2024-08-12 13:59:33,405 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-6] Pre-authenticated entry point called. Rejecting access
+2024-08-12 13:59:33,407 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-6] Securing POST /error
+2024-08-12 13:59:33,409 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-6] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 13:59:33,410 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-6] Pre-authenticated entry point called. Rejecting access
+2024-08-12 13:59:33,443 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Securing POST /api/auth/login
+2024-08-12 13:59:33,446 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-8] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 13:59:33,448 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Secured POST /api/auth/login
+2024-08-12 13:59:33,526 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-7] Failed to authenticate since password does not match stored value
+2024-08-12 13:59:33,529 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-7] Pre-authenticated entry point called. Rejecting access
+2024-08-12 13:59:33,532 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-7] Securing POST /error
+2024-08-12 13:59:33,533 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-7] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 13:59:33,535 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-7] Pre-authenticated entry point called. Rejecting access
+2024-08-12 13:59:33,618 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Securing POST /api/auth/login
+2024-08-12 13:59:33,621 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-9] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 13:59:33,623 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Secured POST /api/auth/login
+2024-08-12 13:59:33,755 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-8] Failed to authenticate since password does not match stored value
+2024-08-12 13:59:33,758 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-8] Pre-authenticated entry point called. Rejecting access
+2024-08-12 13:59:33,761 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-8] Securing POST /error
+2024-08-12 13:59:33,763 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-8] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 13:59:33,765 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-8] Pre-authenticated entry point called. Rejecting access
+2024-08-12 13:59:33,845 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Securing POST /api/auth/login
+2024-08-12 13:59:33,848 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 13:59:33,849 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Secured POST /api/auth/login
+2024-08-12 13:59:33,935 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-9] Failed to authenticate since password does not match stored value
+2024-08-12 13:59:33,939 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-9] Pre-authenticated entry point called. Rejecting access
+2024-08-12 13:59:33,942 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-9] Securing POST /error
+2024-08-12 13:59:33,944 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-9] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 13:59:33,946 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-9] Pre-authenticated entry point called. Rejecting access
+2024-08-12 13:59:34,151 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-10] Failed to authenticate since password does not match stored value
+2024-08-12 13:59:34,154 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-10] Pre-authenticated entry point called. Rejecting access
+2024-08-12 13:59:34,157 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-10] Securing POST /error
+2024-08-12 13:59:34,158 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-10] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 13:59:34,160 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-10] Pre-authenticated entry point called. Rejecting access
+2024-08-12 13:59:34,875 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing POST /api/auth/login
+2024-08-12 13:59:34,878 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 13:59:34,880 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Secured POST /api/auth/login
+2024-08-12 13:59:35,183 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-1] Failed to authenticate since password does not match stored value
+2024-08-12 13:59:35,186 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-1] Pre-authenticated entry point called. Rejecting access
+2024-08-12 13:59:35,189 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-1] Securing POST /error
+2024-08-12 13:59:35,191 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-1] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 13:59:35,194 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-1] Pre-authenticated entry point called. Rejecting access
+2024-08-12 13:59:35,202 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Securing POST /api/auth/login
+2024-08-12 13:59:35,208 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 13:59:35,210 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Secured POST /api/auth/login
+2024-08-12 13:59:35,321 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /api/auth/login
+2024-08-12 13:59:35,323 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 13:59:35,325 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Secured POST /api/auth/login
+2024-08-12 13:59:35,515 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-3] Failed to authenticate since password does not match stored value
+2024-08-12 13:59:35,518 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-3] Pre-authenticated entry point called. Rejecting access
+2024-08-12 13:59:35,520 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-3] Securing POST /error
+2024-08-12 13:59:35,522 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-3] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 13:59:35,524 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-3] Pre-authenticated entry point called. Rejecting access
+2024-08-12 13:59:35,630 DEBUG o.s.s.a.d.DaoAuthenticationProvider [http-nio-7777-exec-2] Failed to authenticate since password does not match stored value
+2024-08-12 13:59:35,633 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-2] Pre-authenticated entry point called. Rejecting access
+2024-08-12 13:59:35,635 DEBUG o.s.s.w.FilterChainProxy [http-nio-7777-exec-2] Securing POST /error
+2024-08-12 13:59:35,637 DEBUG o.s.s.w.a.AnonymousAuthenticationFilter [http-nio-7777-exec-2] Set SecurityContextHolder to anonymous SecurityContext
+2024-08-12 13:59:35,641 DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint [http-nio-7777-exec-2] Pre-authenticated entry point called. Rejecting access

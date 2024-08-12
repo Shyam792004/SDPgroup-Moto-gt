@@ -1,0 +1,66 @@
+.navbar-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--bg-color); /* Variable for light/dark mode */
+    z-index: 1000;
+  }
+  
+  .logo {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color); /* Variable for light/dark mode */
+  }
+  
+  .nav-links {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .nav-item {
+    list-style: none;
+  }
+  
+  .nav-item a {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text-color); /* Variable for light/dark mode */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-item a:hover,
+  .nav-item a.active-link {
+    color: var(--highlight-color); /* Variable for hover/active state */
+  }
+  
+  /* Define CSS variables for light/dark mode */
+  :root {
+    --bg-color: white;
+    --primary-color: #1a202c;
+    --text-color: #4a5568;
+    --highlight-color: #2b6cb0;
+  }
+  
+  [data-theme="dark"] {
+    --bg-color: #1a202c;
+    --primary-color: white;
+    --text-color: #a0aec0;
+    --highlight-color: #63b3ed;
+  }
+  
