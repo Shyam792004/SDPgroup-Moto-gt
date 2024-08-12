@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SecurityTemplateApplication<template>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.security.template.SecurityTemplateApplication",
+            "projectName": "template",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
